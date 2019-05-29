@@ -12,8 +12,11 @@
 	?>
 	<form action="db.php" method="POST">
 		<div>
-			<input type="text" name="name"></input>
+			<input type="text" name="name">
 		</div>
+		<?php
+
+		?>
 		<div class="con">
 			<i class="fa fa-star" aria-hidden="true" id="s1"></i>
 			<i class="fa fa-star" aria-hidden="true" id="s2"></i>
@@ -22,7 +25,7 @@
 			<i class="fa fa-star" aria-hidden="true" id="s5"></i>
 		</div>
 		<div>
-			<input type="submit"></input>
+			<input type="submit">
 		</div>
 	</form>
 
