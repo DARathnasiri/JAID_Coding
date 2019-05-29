@@ -6,17 +6,10 @@
 	<link rel="stylesheet" href="star-rating.css">
 </head>
 <body>
-	<?php
-		session_start();
-		$rate="0";
-	?>
 	<form action="db.php" method="POST">
 		<div>
 			<input type="text" name="name">
 		</div>
-		<?php
-
-		?>
 		<div class="con">
 			<i class="fa fa-star" aria-hidden="true" id="s1"></i>
 			<i class="fa fa-star" aria-hidden="true" id="s2"></i>
