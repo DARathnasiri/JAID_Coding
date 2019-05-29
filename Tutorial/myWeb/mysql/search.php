@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Jobs</title>
-</head>
-<body>
-
-</body>
-</html>
