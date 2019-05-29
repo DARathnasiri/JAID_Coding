@@ -17,16 +17,16 @@
         exit(json_encode(array('id' => $uID)));
     }
 
-    //$sql = $conn->query("SELECT id FROM stars");
+    $sql = $conn->query("SELECT id FROM stars");
     $numR = $sql->num_rows;
 
-    //$sql = $conn->query("SELECT SUM(rateIndex) AS total FROM stars");
+    $sql = $conn->query("SELECT SUM(rateIndex) AS total FROM stars");
     $rData = $sql->fetch_array();
-    //$total = $rData['total'];
+    $total = $rData['total'];
 
     if($numR!=0)
         $avg = $total / $numR;
-    //else
+    else
         $avg=0;
 ?>
 <!doctype html>
