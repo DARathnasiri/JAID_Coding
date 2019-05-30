@@ -5,7 +5,7 @@ html, body{
 }
 
 body{
-    background-image: url('images/wb\ \(6\).jpg') ;
+    background:#d5d7d9;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -19,6 +19,7 @@ body{
     font-family: sans-serif;
     position: fixed;
     width: 100%;
+    z-index: 1;
   }
   
   .header a {
@@ -29,7 +30,6 @@ body{
     text-decoration: none;
     font-size: 18px; 
     line-height: 25px;
-    border-radius: 4px;
     font-family: sans-serif;
   }
   
@@ -71,6 +71,7 @@ body{
   position: fixed;
   margin-left: 1070px;
   margin-top: 95px;
+  border-radius: 0px;
 }
   
 .searchContainer input[type=text] {
@@ -93,6 +94,12 @@ body{
   cursor: pointer;
   width: 35px;
 
+}
+.mark{
+  position: relative;
+  float: right;
+  padding-right: 25px;
+  margin-top: -70px;
 }
   
 .searchContainer button:hover {
@@ -134,8 +141,6 @@ body{
 .container{
     padding: 20px;
     width: 700px;
-    border-style: groove;
-    background-color: #6AACE5;
     margin: 0px auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     opacity: 1;
@@ -144,7 +149,7 @@ body{
 }
 
 .takeToDown{
-  margin-top: 90px;
+  margin-top: 80px;
 }
 .onePost{
   width: 100%;
@@ -152,8 +157,17 @@ body{
   margin: 0px auto;
   color:white;
   opacity: 1;
+  font-family: Century Gothic;
+  padding-top: 1px;
 
 }
+
+
+.date{
+  margin-left: 490px;
+  margin-top: -30px;
+}
+
 
 .onePost #userIcon{
     border-radius: 100%;
@@ -163,16 +177,18 @@ body{
   margin-left: 10px;
 }
 
-.postContainer img{
-  border-radius: 5px;
+
+hr{
+  color: #d5d7d9;
+  height: 2px;
+  background: #d5d7d9;
 }
 
 .postHeader{
-  width: 40%;
-  height: 40px;
+  width: 300px;
+  height: 30px;
   background-color: dodgerblue;
-  border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   margin-left: 10px;
   margin-top:20px;
   font-weight: bold;
@@ -181,6 +197,8 @@ body{
 
 .postContainer{
   font-size: 16px;
+  position: relative;
+  margin-top: 1px;
 }
 
 
@@ -191,69 +209,51 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
 }
-
 .btnJobApply{
   position: relative;
-  margin-left: 570px;
-  margin-top: 100px;
+  margin-left: 540px;
+  margin-top: 1px;
   width: 500px;
-  -moz-box-shadow:inset 0px 1px 0px 0px #8a2a21;
-  -webkit-box-shadow:inset 0px 1px 0px 0px #8a2a21;
-  box-shadow:inset 0px 1px 0px 0px #8a2a21;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
-  background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
-  background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
-  background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
-  background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
-  background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
-  background-color:#c62d1f;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-  border-radius:3px;
+  color: white;
   cursor:pointer;
-  color:#ffffff;
-  font-family:Arial;
+  font-size:13px;
+  padding: 9px;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:black;
+  font-family: sans-serif;
+  border: 1px solid white;
+    
+}
+.btnJobApply:hover{
+  border: none;
+  background-color:#f44336;
+}
+.btnJobApply2{
+  position: relative;
+  margin-left: 545px;
+  margin-top: 1px;
+  color: white;
+  cursor:pointer;
   font-size:13px;
   padding: 10px;
   padding:6px 24px;
   text-decoration:none;
-  text-shadow:0px 1px 0px #810e05;
+  text-shadow:black;
+  font-family: sans-serif;
+  border: 1px solid white;
+  padding-left: 36px;
+  padding-right: 36px;
     
 }
-.btnJobApply2{
-  position: relative;
-  margin-left: 575px;
-  margin-bottom: 300px;
-  width: 130px;
-  padding: 10px;
-  -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
-  -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
-  box-shadow:inset 0px 1px 0px 0px #54a3f7;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
-  background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
-  background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
-  background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
-  background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
-  background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
-  background-color:#007dc1;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-  border-radius:3px;
-  border:1px solid #124d77;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:Arial;
-  font-size:13px;
-  padding:6px 31px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #154682;
+.btnJobApply2:hover{
+  border: none;
+  background-color:dodgerblue;
 }
 
 .btn1{
-  padding: 2px;
-  margin-bottom: 10px;
+  padding: 4px;
+  margin-top: -100px;
 }
 .btn2{
   padding: 10px;
