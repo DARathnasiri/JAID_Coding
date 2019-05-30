@@ -1,73 +1,277 @@
-*{
-  padding:0;
-  margin:0;
-  font-family:sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
 
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+  --btn-color: hsl(210, 80%, 42%);
+  --bg-color: #141218;
 }
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
 body{
-  background: black;
+    background: #d5d7d9;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
-.container{
-  text-align: center;
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  width:100%;
-}
-.container span{
-  color: white;
-  text-transform: uppercase;
-  display: block;
 
-}
-.text1{
-  font-size:50px;
-  font-weight: 700;
-  letter-spacing: 8px;
-  margin-bottom: 20px;
-  background: black;
-  position: relative;
-  animation: text 3s 1;
-
-}
-.text2{
-  font-size: 30px;
-
-
-}
-@keyframes text{
-  0%{
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    font-family: sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    font-family: sans-serif;
     color:black;
-    margin-bottom:-40px;
   }
-  30%{
-    letter-spacing: 25px;
-    margin-bottom: -40px;
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
 
-  }
-  85%{
+a{
+  text-decoration: none;
+}
 
-    letter-spacing: 8px;
-    margin-bottom: -40px;
+a ::after{
+  color: rebeccapurple;
+}
+  
+.header-right {
+    float: right;
+    width: 100%;
   }
+  
+  .header-right img{
+    float: left;
+    border-radius: 100%;
+  }
+  
+  .navBar{
+    float: right;
+  }
+
+ 
+  
+.searchContainer {
+  float: right;
+  position: fixed;
+  margin-left: 1070px;
+  margin-top: 95px;
+}
+  
+.searchContainer input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 210px;
+  height: 25px;
+
+}
+  
+.searchContainer button {
+  float: right;
+  margin-top: 8px;
+  padding: 2px;
+  margin-left: -4px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  width: 45px;
+  height: 37px;
+}
+  
+.searchContainer button:hover {
+    background: #ccc;
+  }
+
+  .searchContainer img{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+  }
+
+  .verticalMenu{
+    width: 290px; /* Set a width if you like */
+    float: left;
+    margin-top: 100px;
+    position: fixed;
+  }
+  
+  .verticalMenu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    font-family: sans-serif;
+    
+  }
+  
+  .verticalMenu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+  .verticalMenu a.active {
+    background-color: dodgerblue; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+  
+.container{
+     padding: 20px;
+    width: 700px;
+    margin: 0px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 1;
+
+    
+}
+
+.takeToDown{
+   margin-top: 85px;
+}
+.onePost{
+  width: 100%;
+  background-color: rgb(74, 80, 119);
+  margin: -5px auto;
+  color:white;
+  opacity: 1;
+  font-family: Century Gothic;
+  padding-top: 1px;
 
 }
 
-.btnGoHome{
-	top:15%;
-  padding: 20px 25px;
-  font-size: 30px;
+
+.onePost #userIcon{
+    border-radius: 100%;
+}
+
+.postContainer{
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+.postContainer img{
+  border-radius: 5px;
+}
+.mark{
+  position: relative;
+  float: right;
+  padding-right: 25px;
+  margin-top: -70px;
+}
+
+.postHeader{
+    width: 300px;
+  height: 30px;
+  background-color: dodgerblue;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top:20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.date{
+  margin-left: 490px;
+  margin-top: -30px;
+}
+
+
+.postContainer{
+  font-size: 16px;
+}
+
+
+
+.usernameClass{
+  color: brown;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+
+
+button {
+  margin-left: 350px;
+  margin-bottom: 10px;
+  padding: 10px 20px;  
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  font-family: century gothic;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 20px; 
+  overflow: hidden;   
+  color: white;
+}
+
+
+
+
+button:hover{
+  border: none;
+  background-color:dodgerblue;
 
 }
-button{
-    width:300px;
-    margin: 0 auto;
-    color:#fff;
-    display:block;
-    border:none;
-    padding:15px 20px;
-    border-radius:25px;
-    background:rgba(255,255,255,.1);
-    background:#1161ee;
+.btn1{
+  position: relative;
+  margin-top: -50px;
+  margin-left: 140px;
+}
+
+.rev{
+  position: relative;
+  margin-left: 540px;
+  margin-top: 10px;
+  width: 500px;
+  color: white;
+  cursor:pointer;
+  font-size:13px;
+  padding: 9px;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:black;
+  font-family: sans-serif;
+  border: 1px solid white;
+}
+.btn2{
+  margin-top: 3px;
+  padding-bottom: 15px;
+  margin-left:25px;
+}
+.rev:hover{
+  border:none;
+  background-color: #f44336;
 }
